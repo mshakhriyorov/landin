@@ -2,13 +2,12 @@
   <div class="header-layout bg-indigo-600">
     <nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
       <div class="flex items-center justify-between">
-        <router-link to="/" class="text-xl font-bold text-gray-100 md:text-2xl hover:text-indigo-400">
-          <div class="d-flex">
-            <LogoSvg />
-            <span class="header-layout__title">
-              O‘ZBEKISTON RESPUBLIKASI TASHQI ISHLAR VAZIRLIGI QOSHIDAGI DIPLOMATIK KORPUSGA XIZMAT
-              KO‘RSATISH BYUROSI
-            </span>
+        <router-link to="/" class="flex items-center gap-4 font-bold cursor-pointer">
+          <LogoSvg />
+          <div class="header-layout__title">
+            O‘ZBEKISTON RESPUBLIKASI TASHQI ISHLAR <br />
+            VAZIRLIGI QOSHIDAGI DIPLOMATIK <br />
+            KORPUSGA XIZMAT KO‘RSATISH BYUROSI
           </div>
         </router-link>
         <!-- Mobile menu button -->
@@ -31,7 +30,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { ref } from 'vue'
 
 import LogoSvg from '../assets/images/IconSvg.vue'
@@ -48,9 +47,16 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 .header-layout {
   margin-left: -90px;
   margin-right: -90px;
+
+  &__title {
+    color: #3F3F3F;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 19px;
+  }
 }
 </style>
