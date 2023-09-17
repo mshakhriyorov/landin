@@ -1,23 +1,19 @@
 import { Icons } from "../assets/images/icons";
 
-import FacebookImg from '../assets/images/facebook.png'
-import InstagramImg from '../assets/images/instagram.png'
-import TwitterImg from '../assets/images/twitter.png'
-
 export const social_links = [
     {
         svgLink: Icons.YouTubeSvg
     },
     {
-        imgSrc: FacebookImg,
+        svgLink: Icons.TelegramSvg
     },
     {
-        imgSrc: InstagramImg,
-    },
-    {
-        imgSrc: TwitterImg,
+        svgLink: Icons.YouTubeSvg
     },
     {
         svgLink: Icons.TelegramSvg
+    },
+    {
+        svgLink: Icons.YouTubeSvg,
     }
 ]

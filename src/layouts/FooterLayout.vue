@@ -10,8 +10,7 @@
                 <ul class="flex items-center gap-6">
                     <li v-for="(link, index) in social_links" :key="index" class="footer-layout__social-link">
                         <a href="#">
-                            <component v-if="link.svgLink" :is="link.svgLink" />
-                            <img v-else :src="link.imgSrc" alt="Social media">
+                            <component :is="link.svgLink" />
                         </a>
                     </li>
                 </ul>
@@ -20,7 +19,8 @@
                 <ul class="flex sm:flex-wrap md:flex-nowrap gap-x-28 gap-y-12 justify-center">
                     <li class="footer-layout__items">
                         <ul class="footer-layout__items--list">
-                            <li v-for="(item, index) in navbar_items" :key="index" class="footer-layout__items--text isLink">
+                            <li v-for="(item, index) in navbar_items" :key="index"
+                                class="footer-layout__items--text isLink">
                                 {{ item.title }}
                             </li>
                         </ul>
@@ -87,10 +87,10 @@ export default defineComponent({
     }
 
     &__social-link {
-        border-radius: 50%;
+        opacity: 0.5;
 
         &:hover {
-            background-color: #FFFFFF;
+            opacity: 1;
         }
     }
 }
