@@ -19,7 +19,7 @@
                 <div class="flex sm:items-center xl:items-start sm:justify-center xl:justify-start sm:flex-col sm:gap-8 xl:flex-row w-full relative">
                     <div class="useful-links__map-box overflow-hidden sm:md:max-w-xl md:max-w-5xl xl:max-w-screen-xl w-full">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187.27805986846695!2d69.26377308089285!3d41.32084980115892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b3fd55991d9%3A0xf4d4d9bd8cde379a!2z0KHQu9GD0LbQsdCwINCU0LjQv9C70L7QvNCw0YLQuNGH0LXRgdC60L7Qs9C-INCh0LXRgNCy0LjRgdCwINCc0JjQlCDQoNC10YHQv9GD0LHQu9C40LrQuCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sen!2s!4v1694945854957!5m2!1sen!2s"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187.27805986846695!2d69.26377308089285!3d41.32084980115892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b3fd55991d9%3A0xf4d4d9bd8cde379a!2z0KHQu9GD0LbQsdCwINCU0LjQv9C70L7QvNCw0YLQuNGH0LXRgdC60L7Qs9C-INCh0LXRgNCy0LjRgdCwINCc0JjQlCDQoNC10YHQv9GD0LHQu9C40LrQuCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sen!2s!4v1694945854957!5m2!1sen!2s&z=2"
                             width="1500px" height="500px" style="border:0;" frameborder="0" allowfullscreen loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade" />
                     </div>
