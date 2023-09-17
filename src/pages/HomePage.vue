@@ -7,9 +7,11 @@ import UsefulLinks from '../components/UsefulLinks.vue';
 </script>
 
 <template>
-    <OurService />
-    <News />
-    <Gallery />
-    <Statistics />
-    <UsefulLinks />
+    <div>
+        <OurService />
+        <News />
+        <Gallery />
+        <Statistics />
+        <UsefulLinks />
+    </div>
 </template>

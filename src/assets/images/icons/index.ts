@@ -8,6 +8,8 @@ import HandSvg from './HandSvg.vue';
 import HourGlassSvg from './HourGlassSvg.vue';
 import IdSvg from './IdSvg.vue';
 import InboxSvg from './InboxSvg.vue';
+import LogoSvg from './LogoSvg.vue';
+import LogoSecondBgSvg from './LogoSecondBgSvg.vue';
 import SearchSvg from './SearchSvg.vue';
 import TelegramSvg from './TelegramSvg.vue';
 import TopArrowSvg from './TopArrowSvg.vue';
@@ -22,6 +24,8 @@ export const Icons = {
     HamburgerSvg,
     HourGlassSvg,
     IdSvg,
+    LogoSvg,
+    LogoSecondBgSvg,
     InboxSvg,
     PhotoSvg,
     SearchSvg,

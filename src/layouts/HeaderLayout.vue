@@ -11,7 +11,7 @@
         <div class="flex items-center justify-between">
           <router-link to="/" class="flex items-center gap-4 font-bold cursor-pointer">
             <span class="min-w-20">
-              <LogoSvg />
+              <component :is="Icons.LogoSvg" />
             </span>
             <div class="header-layout__title md:hidden xl:block">
               O‘ZBEKISTON RESPUBLIKASI TASHQI ISHLAR
@@ -51,8 +51,6 @@
 <script lang="ts">
 import { ref } from 'vue';
 
-import LogoSvg from '../assets/images/IconSvg.vue';
-
 import { Icons } from '../assets/images/icons';
 
 import { navbar_items } from '../constants/navbar-items.ts'
@@ -63,8 +61,7 @@ export default {
     const toggleNav = () => (showMenu.value = !showMenu.value)
 
     return { showMenu, toggleNav, Icons, navbar_items }
-  },
-  components: { LogoSvg }
+  }
 }
 </script>
 

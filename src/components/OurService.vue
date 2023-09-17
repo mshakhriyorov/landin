@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="bg-transparent py-24 sm:py-32">
+        <div class="bg-transparent py-10 sm:py-5">
             <div class="mx-auto max-w-screen-2xl flex flex-col gap-4 md:gap-14 justify-center items-center">
                 <h2 class="our-service__title">{{ title }}</h2>
 

@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="gallery py-24 sm:py-32">
+    <div class="gallery__box">
+        <div class="gallery py-24 sm:py-44">
             <div class="mx-auto flex flex-col gap-2 md:gap-6 justify-center items-center">
                 <h2 class="gallery__title">{{ title }}</h2>
 
@@ -49,6 +49,10 @@
                 </ul>
             </div>
         </div>
+        <div class="gallery__background">
+            <component :is="Icons.LogoSecondBgSvg" />
+        </div>
+        <div class="gallery__box--bg"></div>
     </div>
 </template>
 
@@ -72,7 +76,13 @@ export default defineComponent({
 
 <style scoped lang="scss">
 .gallery {
-    background: #E8F8FF;
+    &__background {
+        opacity: 0.2;
+        position: absolute;
+        top: -10%;
+        left: -10%;
+        z-index: -11111;
+    }
 
     &__title {
         color: #3F3F3F;
@@ -125,6 +135,43 @@ export default defineComponent({
         &--case {
             border-radius: 32px;
         }
+    }
+}
+
+.gallery__box {
+    position: relative;
+
+    &--bg {
+        width: 100%;
+        height: 100%;
+        background: #E8F8FF;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1111;
+        border-radius: 20px;
+    }
+
+    &::before {
+        z-index: -111;
+        height: 10%;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to bottom left, transparent 50%, #ffffff 50%);
+    }
+
+    &::after {
+        z-index: -111;
+        height: 20%;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top left, transparent 50%, #ffffff 50%);
     }
 }
 </style>
