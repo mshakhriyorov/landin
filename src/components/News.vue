@@ -2,7 +2,7 @@
     <div>
         <div class="bg-transparent py-24 sm:py-32">
             <div class="mx-auto flex flex-col gap-4 md:gap-14 justify-center items-center">
-                <h2 class="news__title text-center text-lg font-semibold leading-8 text-gray-900">{{ title }}</h2>
+                <h2 class="news__title">{{ title }}</h2>
 
                 <ul class="flex sm:flex-wrap xl:flex-nowrap justify-center md:gap-4 sm:gap-2">
                     <li v-for="(item, index) in newsData.news" :key="index"
@@ -53,6 +53,7 @@ export default defineComponent({
         font-size: 40px;
         line-height: 39px;
         font-weight: bold;
+        text-align: center;
     }
 
     &__image-box {

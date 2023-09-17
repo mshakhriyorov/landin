@@ -1,0 +1,46 @@
+{
+    "chartData": [
+        {
+            "datasets": [
+                {
+                    "backgroundColor": [
+                        "#A2A0FB",
+                        "#E4E4E4"
+                    ],
+                    "data": [
+                        80,
+                        10
+                    ]
+                }
+            ]
+        },
+        {
+            "datasets": [
+                {
+                    "backgroundColor": [
+                        "#4FCF7F",
+                        "#E4E4E4"
+                    ],
+                    "data": [
+                        10,
+                        90
+                    ]
+                }
+            ]
+        },
+        {
+            "datasets": [
+                {
+                    "backgroundColor": [
+                        "#077CAD",
+                        "#E4E4E4"
+                    ],
+                    "data": [
+                        10,
+                        90
+                    ]
+                }
+            ]
+        }
+    ]
+}
