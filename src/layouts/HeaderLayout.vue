@@ -137,6 +137,7 @@ export default {
 
     &--container {
       position: absolute;
+      left: 0;
       top: 70%;
       background-color: #097CAD;
       width: 68px;
