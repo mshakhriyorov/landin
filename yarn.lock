@@ -156,6 +156,11 @@
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
   integrity sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==
 
+"@jambonn/vue-concise-carousel@^2.1.31":
+  version "2.1.31"
+  resolved "https://registry.yarnpkg.com/@jambonn/vue-concise-carousel/-/vue-concise-carousel-2.1.31.tgz#bbcf494fdb5970b5737747aef97729ed3f1ac79b"
+  integrity sha512-TeAaI+XcjvhqtFQ7DeWJhuNJTwihIrwN8M1AHc9rXQ+1FixQUUWYk3zAmguCb5GpspZXp1nCgwVpu9zRjFO7xg==
+
 "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/@jridgewell/gen-mapping/-/gen-mapping-0.3.3.tgz#7e02e6eb5df901aaedb08514203b096614024098"

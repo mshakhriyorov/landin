@@ -12,7 +12,9 @@ import ScrollToTop from './components/ScrollToTop.vue';
       <HeaderLayout />
     </header>
 
-    <HomePage />
+    <div class="grid justify-center">
+      <HomePage />
+    </div>
 
     <!-- socail links -->
     <div class="app__socials sm:hidden md:block">
@@ -47,6 +49,8 @@ import ScrollToTop from './components/ScrollToTop.vue';
     margin-left: -76px;
     margin-right: -76px;
   }
+
+  &__home {}
 
   &__footer {
     margin-left: -100px;

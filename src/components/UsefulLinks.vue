@@ -111,6 +111,7 @@ export default defineComponent({
     }
 
     &__item {
+        display: flex;
         box-shadow: 0px 25px 30px #0000001A;
         background: #FFFFFF;
         border-radius: 10px;

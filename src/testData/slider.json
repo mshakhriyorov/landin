@@ -1,0 +1,25 @@
+{
+    "sliderData": [
+        {   
+            "id": 0,
+            "title": "Axborot texnologiyalari xizmatlari",
+            "text": "Axborot kommunikatsiya texnologiyalari bo’limi O‘zbekiston Respublikasi Axborot texnologiyalari va kommunikatsiyalarini rivojlantirish"
+        },
+          {   
+            "id": 1,
+            "title": "Transport xizmati",
+            "text": "O'R TIVning Konsullik boshqarmasi orqali viza yordamini rasmiylashtirishda ko'mak ko'rsatish, O'R IIV Chiqish-kirish va fuqarolikni"
+        },
+        {   
+            "id": 2,
+            "title": "Axborot texnologiyalari xizmatlari",
+            "text": "Axborot kommunikatsiya texnologiyalari bo’limi O‘zbekiston Respublikasi Axborot texnologiyalari va kommunikatsiyalarini rivojlantirish"
+        },
+        {   
+            "id": 3,
+            "title": "Transport xizmati",
+            "text": "O'R TIVning Konsullik boshqarmasi orqali viza yordamini rasmiylashtirishda ko'mak ko'rsatish, O'R IIV Chiqish-kirish va fuqarolikni"
+        }
+      
+    ]
+}

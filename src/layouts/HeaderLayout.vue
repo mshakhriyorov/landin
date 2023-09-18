@@ -31,7 +31,7 @@
         <ul :class="showMenu ? 'flex' : 'hidden'"
           class="header-layout__links flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 md:gap-4">
           <li v-for="item in navbar_items" :key="item.path"
-            class="header-layout__navbar-item flex md:justify-center m-0 text-gray-100 hover:text-indigo-400 text-center p-4 pt-16 hover:bg-sky-100 first:bg-sky-100 rounded-b-xl">
+            class="header-layout__navbar-item flex md:justify-center m-0 text-gray-100 text-center p-4 pt-16 hover:bg-sky-100 first:font-bold first:bg-sky-100 rounded-b-xl">
             <a href="#" class="font-medium cursor-pointer">
               {{ item.title }}
             </a>
