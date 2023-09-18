@@ -1,6 +1,6 @@
 <template>
   <div class="header-layout">
-    <nav class="container min-w-full px-6 py-8 md:flex md:justify-between md:items-center md:gap-28 xs:bg-sky-100">
+    <nav class="container min-w-full px-6 py-8 md:flex md:justify-between md:items-center md:gap-12 xs:bg-sky-100">
       <div class="xs:hidden sm:hidden xl:block">
         <button type="button" class="xs:hidden text-gray-100 hover:text-gray-400 focus:outline-none focus:text-gray-400">
           <component :is="Icons.HamburgerSvg" />
@@ -13,7 +13,7 @@
             <span class="min-w-20">
               <component :is="Icons.LogoSvg" />
             </span>
-            <div class="title max-w-sm text-sm xs:text-center xs:text-2xs 2xl:block">
+            <div class="title max-w-sm text-sm xs:text-center xs:text-2xs 2.5xl:hidden">
               O‘ZBEKISTON RESPUBLIKASI TASHQI ISHLAR
               VAZIRLIGI QOSHIDAGI DIPLOMATIK
               KORPUSGA XIZMAT KO‘RSATISH BYUROSI
