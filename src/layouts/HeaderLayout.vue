@@ -1,26 +1,26 @@
 <template>
   <div class="header-layout">
-    <nav class="container min-w-full px-6 py-8 md:flex md:justify-between md:items-center md:gap-28">
-      <div class="sm:hidden md:block">
-        <button type="button" class="text-gray-100 hover:text-gray-400 focus:outline-none focus:text-gray-400">
+    <nav class="container min-w-full px-6 py-8 md:flex md:justify-between md:items-center md:gap-28 xs:bg-sky-100">
+      <div class="xs:hidden sm:hidden xl:block">
+        <button type="button" class="xs:hidden text-gray-100 hover:text-gray-400 focus:outline-none focus:text-gray-400">
           <component :is="Icons.HamburgerSvg" />
         </button>
       </div>
 
-      <div class="md:flex md:justify-between md:items-center gap-12 w-full">
+      <div class="xl:flex xl:justify-between xl:items-center gap-12 w-full">
         <div class="flex items-center justify-between">
           <a href="/" class="flex items-center gap-4 font-bold cursor-pointer">
             <span class="min-w-20">
               <component :is="Icons.LogoSvg" />
             </span>
-            <div class="header-layout__title md:hidden xl:block">
+            <div class="title max-w-sm text-sm xs:text-center xs:text-2xs 2xl:block">
               O‘ZBEKISTON RESPUBLIKASI TASHQI ISHLAR
               VAZIRLIGI QOSHIDAGI DIPLOMATIK
               KORPUSGA XIZMAT KO‘RSATISH BYUROSI
             </div>
           </a>
           <!-- Mobile menu button -->
-          <div @click="toggleNav" class="flex md:hidden">
+          <div @click="toggleNav" class="flex xl:hidden">
             <button type="button" class="text-gray-100 hover:text-gray-400 focus:outline-none focus:text-gray-400">
               <component :is="Icons.HamburgerSvg" />
             </button>
@@ -29,23 +29,39 @@
 
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
         <ul :class="showMenu ? 'flex' : 'hidden'"
-          class="header-layout__links flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 md:gap-4">
+          class="flex-col mt-8 space-y-4 xl:flex xl:space-y-0 xl:flex-row xl:items-center xl:space-x-10 xl:gap-4 xs:mt-5 xs:border-t xs:border-black xs:border-solid xl:-mt-16">
           <li v-for="item in navbar_items" :key="item.path"
-            class="header-layout__navbar-item flex md:justify-center m-0 text-gray-100 text-center p-4 pt-16 hover:bg-sky-100 first:font-bold first:bg-sky-100 rounded-b-xl">
+            class="header-layout__navbar-item flex md:justify-center m-0 text-gray-100 text-center p-4 pt-16 hover:bg-sky-100 first:font-bold first:bg-sky-100 rounded-b-xl xs:p-4">
             <a href="#" class="font-medium cursor-pointer">
               {{ item.title }}
             </a>
           </li>
-          <li class="pt-12">
-            <component :is="Icons.EyeSvg" class="header-layout__navbar-item" />
-          </li>
-          <li class="pt-12">
-            <component :is="Icons.SearchSvg" class="header-layout__navbar-item" />
-          </li>
+          <ul class="header-layout__icons flex gap-6">
+            <li class="pt-12">
+              <component :is="Icons.EyeSvg" class="header-layout__navbar-item" />
+            </li>
+            <li class="pt-12">
+              <component :is="Icons.SearchSvg" class="header-layout__navbar-item" />
+            </li>
+            <div class="header-layout__language flex flex-col gap-4 justify-center items-center relative sm:hidden xs:w-12">
+              <span @click="handleShowDropdown" aria-hidden="true" class="text-white text-base leading-5">
+                {{ currentLang }}
+              </span>
+
+              <span class="header-layout__language--container" v-if="showDropdown">
+                <ul class="header-layout__language--content flex flex-col items-center justify-start gap-4">
+                  <li v-for="lang in LANGUAGES" :key="lang" @click="selectLanguage(lang)"
+                    class="hover:font-bold text-sky-500 text-base leading-5">
+                    {{ lang }}
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </ul>
         </ul>
       </div>
 
-      <div class="header-layout__language flex flex-col gap-4 justify-center items-center relative">
+      <div class="header-layout__language xs:hidden sm:hidden xl:block xl:p-5 flex flex-col gap-4 justify-center items-center relative">
         <span @click="handleShowDropdown" aria-hidden="true" class="text-white text-base leading-5">
           {{ currentLang }}
         </span>
@@ -104,17 +120,6 @@ export default {
 
 <style scoped lang="scss">
 .header-layout {
-  &__title {
-    color: #3F3F3F;
-    font-size: 15px;
-    max-width: 360px;
-    line-height: 19px;
-  }
-
-  &__links {
-    margin-top: -4rem;
-  }
-
   &__navbar-item {
     font-size: 16px;
     line-height: 19px;
@@ -126,7 +131,6 @@ export default {
   &__language {
     background-color: #097CAD;
     border-radius: 0 28px 28px 28px;
-    padding: 30px;
     width: 68px;
     height: 80px;
     cursor: pointer;
@@ -146,6 +150,10 @@ export default {
       padding: 30px;
       transform: translateY(10%);
     }
+  }
+
+  &__icons {
+    margin: 0 !important;
   }
 }
 </style>

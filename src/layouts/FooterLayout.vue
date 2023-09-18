@@ -1,8 +1,8 @@
 <template>
     <div class="max-w-screen-2xl">
-        <ul class="flex flex-wrap gap-x-28 gap-y-12 justify-start">
-            <li class="max-w-sm flex flex-col gap-5">
-                <span class="text-white font-bold text-md">
+        <ul class="flex flex-wrap gap-x-28 gap-y-12 justify-start xs:justify-center">
+            <li class="max-w-sm flex flex-col gap-5 xs:items-center">
+                <span class="text-white font-bold text-md xs:text-center">
                     O‘ZBEKISTON RESPUBLIKASI TASHQI ISHLAR
                     VAZIRLIGI QOSHIDAGI DIPLOMATIK
                     KORPUSGA XIZMAT KO‘RSATISH BYUROSI
@@ -36,7 +36,7 @@
                 </ul>
             </li>
             <li class="footer-layout__items flex flex-col gap-32">
-                <div class="footer-layout__items--text">
+                <div class="footer-layout__items--text xs:text-center">
                     Ушбу сайтда чоп этилган материаллардан фойдаланилганда www.ddsmfa.uz ҳаволасини кўрсатиб ўтиш шарт
                 </div>
                 <!-- TODO: this is temporary solution. Change it with real data link -->

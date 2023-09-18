@@ -4,7 +4,19 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        '2xs': ['8px', '10px'],
+      },
+      maxWidth: {
+        '2xs': '200px',
+        '3xs': '350px'
+      },
+      maxHeight: {
+        'img96': '22rem',
+        'img100': '28rem'
+      }
+    },
     screens: {
       'xs': {'max': '639px'},
       // => @media (max-width: 639px) { ... }

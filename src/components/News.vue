@@ -1,10 +1,10 @@
 <template>
     <div>
         <div class="bg-transparent py-24 sm:py-32">
-            <div class="mx-auto flex flex-col gap-4 md:gap-14 justify-center items-center">
-                <h2 class="news__title">{{ title }}</h2>
+            <div class="mx-auto flex flex-col gap-4 xs:max-w-3xs md:gap-14 justify-center items-center">
+                <h2 class="title font-bold text-center xs:text-2xl xs:pb-4 text-3xl xl:text-4xl">{{ title }}</h2>
 
-                <ul class="flex sm:flex-wrap xl:flex-nowrap justify-center md:gap-4 sm:gap-2">
+                <ul class="grid xs:grid-rows-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4">
                     <li v-for="(item, index) in newsData.news" :key="index"
                         class="news__item flex flex-col items-center gap-5 lg:max-w-sm w-auto">
                         <div class="news__image-box w-full">
@@ -48,14 +48,6 @@ export default defineComponent({
 
 <style scoped lang="scss">
 .news {
-    &__title {
-        color: #3F3F3F;
-        font-size: 40px;
-        line-height: 39px;
-        font-weight: bold;
-        text-align: center;
-    }
-
     &__image-box {
         border-radius: 26px 26px 0px 0px;
         overflow: hidden;

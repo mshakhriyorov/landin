@@ -1,12 +1,12 @@
 <template>
     <div>
         <div class="bg-transparent py-24 sm:py-32">
-            <div class="mx-auto flex flex-col gap-4 md:gap-14 justify-center items-center">
-                <h2 class="statistics__title">{{ title }}</h2>
+            <div class="mx-auto flex flex-col gap-4 xs:max-w-3xs md:gap-14 justify-center items-center">
+                <h2 class="title font-bold text-center xs:text-2xl xs:pb-4 text-3xl xl:text-4xl">{{ title }}</h2>
 
-                <ul class="flex sm:flex-wrap xl:flex-nowrap justify-center items-center md:gap-4 sm:gap-2">
+                <ul class="grid xs:grid-rows-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-2">
                     <div
-                        class="statistics__item--wrapper bg-white flex flex-col justify-center items-center lg:mr-4 sm:mb-4 sm:mr-0">
+                        class="bg-white flex flex-col justify-center items-center xs:w-full sm:mb-4 sm:mr-0 lg:mr-4">
                         <div class="text-center text-4xl font-bold text-gray-900">3 120</div>
                         <span class="statistics__title--second">Все обращения</span>
                     </div>
@@ -51,12 +51,6 @@ export default defineComponent({
 <style scoped lang="scss">
 .statistics {
     &__title {
-        color: #3F3F3F;
-        font-size: 40px;
-        line-height: 39px;
-        font-weight: bold;
-        text-align: center;
-
         &--second {
             font-size: 18px;
             font-weight: normal;

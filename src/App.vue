@@ -17,17 +17,13 @@ import ScrollToTop from './components/ScrollToTop.vue';
     </div>
 
     <!-- socail links -->
-    <div class="app__socials sm:hidden md:block">
+    <div class="app__socials xs:hidden sm:hidden md:block">
       <Socials />
     </div>
 
     <!-- scroll to top button -->
-    <div class="sm:hidden md:block">
+    <div class="xs:hidden sm:hidden xl:block">
       <ScrollToTop />
-    </div>
-
-    <div>
-
     </div>
 
     <footer class="app__footer">
@@ -49,8 +45,6 @@ import ScrollToTop from './components/ScrollToTop.vue';
     margin-left: -76px;
     margin-right: -76px;
   }
-
-  &__home {}
 
   &__footer {
     margin-left: -100px;

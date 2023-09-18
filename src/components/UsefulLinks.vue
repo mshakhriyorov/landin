@@ -1,10 +1,10 @@
 <template>
     <div class="useful-links flex justify-center">
         <div class="bg-transparent py-24 sm:py-32 max-w-screen-2xl">
-            <div class="mx-auto flex flex-col gap-4 md:gap-14 justify-center items-center">
-                <h2 class="useful-links__title">{{ title }}</h2>
+            <div class="mx-auto flex flex-col gap-4 xs:max-w-3xs md:gap-14 justify-center items-center">
+                <h2 class="title font-bold text-center xs:text-2xl xs:pb-4 text-3xl xl:text-4xl">{{ title }}</h2>
 
-                <ul class="flex sm:flex-wrap xl:flex-nowrap justify-center md:gap-4 sm:gap-2">
+                <ul class="grid xs:grid-rows-1 sm:grid-cols-2 xl:grid-cols-3 2xl:flex justify-center items-center gap-4">
                     <li v-for="(link, index) in links" :key="index" class="useful-links__item">
                         <a :href="link.href" class="flex flex-col items-center justify-center p-9 gap-10" target="_blank">
                             <img :src="link.icon" :alt="link.title" />
@@ -17,7 +17,7 @@
 
                 <!-- adress and map go here -->
                 <div
-                    class="flex sm:items-center xl:items-start sm:justify-center xl:justify-start sm:flex-col sm:gap-8 xl:flex-row w-full relative">
+                    class="flex sm:items-center xl:items-start sm:justify-center xl:justify-start xs:flex-col sm:flex-col sm:gap-8 xl:flex-row w-full relative">
                     <div
                         class="useful-links__map-box overflow-hidden sm:md:max-w-xl md:max-w-5xl xl:max-w-screen-xl w-full">
                         <iframe
@@ -26,7 +26,7 @@
                             referrerpolicy="no-referrer-when-downgrade" />
                     </div>
                     <div class="useful-links__card max-w-lg max-h-80 relative lg:absolute">
-                        <div class="flex items-center gap-5">
+                        <div class="flex items-center gap-5 xs:flex-col">
                             <span class="min-w-20">
                                 <component :is="Icons.LogoSvg" />
                             </span>
@@ -100,14 +100,6 @@ export default defineComponent({
         left: 0;
         z-index: -1111;
         border-radius: 20px;
-    }
-
-    &__title {
-        color: #3F3F3F;
-        font-size: 40px;
-        line-height: 39px;
-        font-weight: bold;
-        text-align: center;
     }
 
     &__item {

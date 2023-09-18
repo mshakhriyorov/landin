@@ -1,11 +1,11 @@
 <template>
     <div class="gallery__box">
         <div class="gallery py-24 sm:py-44">
-            <div class="mx-auto flex flex-col gap-2 md:gap-6 justify-center items-center">
-                <h2 class="gallery__title">{{ title }}</h2>
+            <div class="mx-auto flex flex-col gap-2 xs:max-w-3xs md:gap-6 justify-center items-center">
+                <h2 class="title font-bold text-center xs:text-2xl xs:pb-4 text-3xl xl:text-4xl">{{ title }}</h2>
 
                 <!-- video/photo switcher -->
-                <div class="gallery__switcher overflow-hidden flex text-2xl mb-4">
+                <div class="gallery__switcher overflow-hidden flex xs:text-sm text-2xl mb-4">
                     <div @click="isVideo = false"
                         :class="!isVideo ? 'text-white font-bold bg-sky-500' : 'text-black font-normal bg-transparent cursor-pointer'"
                         class="gallery__switcher--case py-3.5 px-11">Foto</div>
@@ -14,7 +14,7 @@
                         class="gallery__switcher--case py-3.5 px-11">Video</div>
                 </div>
 
-                <ul v-if="isVideo" class="flex sm:flex-wrap 2xl:flex-nowrap justify-center md:gap-4 sm:gap-2">
+                <ul v-if="isVideo" class="grid xs:grid-rows-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
                     <li v-for="(item, index) in newsData.news" :key="index" class="gallery__item lg:max-w-sm w-auto">
                         <div class="w-full">
                             <iframe width="350" height="230"
@@ -32,7 +32,7 @@
                         </div>
                     </li>
                 </ul>
-                <ul v-else class="flex sm:flex-wrap xl:flex-nowrap justify-center md:gap-4 sm:gap-2">
+                <ul v-else class="grid xs:grid-rows-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
                     <li v-for="(item, index) in newsData.news" :key="index" class="gallery__item lg:max-w-sm w-auto">
                         <div class="gallery__image-box w-full">
                             <img src="../assets/images/photo.jpg" :alt="item.title" class="gallery__image" />
@@ -82,14 +82,6 @@ export default defineComponent({
         top: -10%;
         left: -10%;
         z-index: -11111;
-    }
-
-    &__title {
-        color: #3F3F3F;
-        font-size: 40px;
-        line-height: 39px;
-        font-weight: bold;
-        text-align: center;
     }
 
     &__image-box {
