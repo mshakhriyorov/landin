@@ -15,6 +15,20 @@ module.exports = {
       maxHeight: {
         'img96': '22rem',
         'img100': '28rem'
+      },
+      keyframes: {
+        zoom: {
+          '0%': { transform: 'scale(1)' },
+          '100%': { transform: 'scale(1.2)' },
+        },
+        move_card: {
+          '0%': { transform: 'translateX(400px)' },
+          '100%': { transform: 'translateX(0)' },
+        }
+      },
+      animation: {
+        zoom: 'zoom 2s ease-in-out forwards',
+        move_card: 'move_card 2s ease-out forwards',
       }
     },
     screens: {
